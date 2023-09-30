@@ -1,29 +1,31 @@
 import { Page, Text, Image, View, StyleSheet, Font } from '@react-pdf/renderer';
 
-const Template2 = ({totalAmount, rows, logo, notes, currencySymbol, formName, businessName, InvoiceNo, date, clientName, clientAddress, clientCity, clientZipcode, clientEmail, clientPhone, address, city, zipcode, phone, email, website}) => {
+const Template2 = ({totalAmount, rows, logo, notes, currencySymbol, formName, businessName, InvoiceNo, date, clientName, clientAddress, clientCity, clientZipcode, clientEmail, clientPhone, address, city, zipcode, phone, email, website, fontsPrefix}) => {
+
+  fontsPrefix = fontsPrefix || '';
 
   Font.register({
     family: 'Inter-Regular',
-    src: "/assets/Inter-Regular.ttf",
+    src: `${fontsPrefix}/assets/Inter-Regular.ttf`,
   });
   Font.register({
     family: 'Inter-Bold',
-    src: "/assets/Inter-Bold.ttf",
+    src: `${fontsPrefix}/assets/Inter-Bold.ttf`,
   });
 
   Font.register({
     family: 'Roxborough',
-    src: "/assets/Roxborough-CF.ttf",
+    src: `${fontsPrefix}/assets/Roxborough-CF.ttf`,
   });
   
   Font.register({
     family: 'Quicksand',
-    src: "/assets/Quicksand-Medium.ttf",
+    src: `${fontsPrefix}/assets/Quicksand-Medium.ttf`,
   });
 
   Font.register({
     family: 'Quicksand-Bold',
-    src: "/assets/Quicksand-Bold.ttf",
+    src: `${fontsPrefix}/assets/Quicksand-Bold.ttf`,
   });
 
   const styles = StyleSheet.create({

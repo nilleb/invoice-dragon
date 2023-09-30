@@ -1,0 +1,14 @@
+POST http://localhost:3000/api/json
+content-type: application/json
+
+{
+    "template": "template2",
+    "email": "hello@nilleb.com",
+    "businessName": "nillebco",
+    "formName": "Invoice",
+    "rows": [{ "id": 0, "quantity": 1, "amount": "2000.00" }],
+    "logo": "https://media.licdn.com/dms/image/D4D0BAQF7gcaauOlIFQ/company-logo_100_100/0/1692942090951?e=1704326400&v=beta&t=enXpVsLOO1IkxqUM8AljVv4439UvwSYX2UgnQNOw0os"
+}
+
+###
+GET http://localhost:3000/assets/Garet-Book.ttf

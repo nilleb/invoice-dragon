@@ -6,7 +6,7 @@ import Template2 from "./Templates/Template2";
 import Template3 from "./Templates/Template3";
 import Template4 from "./Templates/Template4";
 
-const PDF = ({ template, rows, currencySymbol, formName, logo, logoUpdated, email, businessName, address, city, zipcode, phone, owner, clientName, clientEmail, clientAddress, clientCity, clientZipcode, clientPhone, date, InvoiceNo, website, notes, totalAmount }) => {
+const PDF = ({ template, rows, currencySymbol, formName, logo, logoUpdated, email, businessName, address, city, zipcode, phone, owner, clientName, clientEmail, clientAddress, clientCity, clientZipcode, clientPhone, date, InvoiceNo, website, notes, totalAmount, fontsPrefix }) => {
 
   return (
     <Document
@@ -39,6 +39,7 @@ const PDF = ({ template, rows, currencySymbol, formName, logo, logoUpdated, emai
           city={city}
           zipcode={zipcode}
           website={website}
+          fontsPrefix={fontsPrefix}
         />
       }
       {template === 'template2' &&
@@ -65,6 +66,7 @@ const PDF = ({ template, rows, currencySymbol, formName, logo, logoUpdated, emai
           city={city}
           zipcode={zipcode}
           website={website}
+          fontsPrefix={fontsPrefix}
         />
       }
       {template === 'template3' &&
@@ -92,6 +94,7 @@ const PDF = ({ template, rows, currencySymbol, formName, logo, logoUpdated, emai
           email={email}
           phone={phone}
           website={website}
+          fontsPrefix={fontsPrefix}
         />
       }
       {template === 'template4' &&
@@ -118,6 +121,7 @@ const PDF = ({ template, rows, currencySymbol, formName, logo, logoUpdated, emai
           phone={phone}
           email={email}
           website={website}
+          fontsPrefix={fontsPrefix}
         />
       }
     </Document>

@@ -1,28 +1,30 @@
 import { Page, Text, Image, View, StyleSheet, Font } from '@react-pdf/renderer';
 
-const Template3 = ({totalAmount, rows, email, phone, logo, logoUpdated, notes, currencySymbol, formName, businessName, InvoiceNo, date, clientName, clientAddress, clientCity, clientZipcode, clientPhone, clientEmail, address, city, zipcode, website}) => {
+const Template3 = ({totalAmount, rows, email, phone, logo, logoUpdated, notes, currencySymbol, formName, businessName, InvoiceNo, date, clientName, clientAddress, clientCity, clientZipcode, clientPhone, clientEmail, address, city, zipcode, website, fontsPrefix}) => {
+
+  fontsPrefix = fontsPrefix || '';
 
   Font.register({
     family: 'Poppins-Bold',
-    src: "/assets/Poppins-Bold.ttf",
+    src: "${fontsPrefix}/assets/Poppins-Bold.ttf",
   });
   Font.register({
     family: 'Poppins-Medium',
-    src: "/assets/Poppins-Medium.ttf",
+    src: `${fontsPrefix}/assets/Poppins-Medium.ttf`,
   });
   Font.register({
     family: 'Poppins-Light',
-    src: "/assets/Poppins-Light.ttf",
+    src: `${fontsPrefix}/assets/Poppins-Light.ttf`,
   });
 
   Font.register({
     family: 'Quicksand',
-    src: "/assets/Quicksand-Medium.ttf",
+    src: `${fontsPrefix}/assets/Quicksand-Medium.ttf`,
   });
 
   Font.register({
     family: 'Quicksand-Bold',
-    src: "/assets/Quicksand-Bold.ttf",
+    src: `${fontsPrefix}/assets/Quicksand-Bold.ttf`,
   });
 
   const styles = StyleSheet.create({

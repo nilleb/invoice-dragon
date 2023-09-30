@@ -5,14 +5,13 @@ import { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
 import { PDFDownloadLink } from '@react-pdf/renderer';
-import { PDF } from '../components/Preview/Preview';
+import Previewed, { PDF } from '../components/Preview/Preview';
 import InvoiceTemplate from "../components/InvoiceTemplate/InvoiceTemplate";
 import Dropdown from '../components/Dropdown/Dropdown';
 import styles from '@/styles/Home.module.scss';
 import Form from "../components/Form/Form";
 import Header from '@/components/Header/Header';
 import logoP from '../assets/images/placeholder-image.png';
-import Previewed from "../components/Preview/Preview";
 
 import useTranslation from 'next-translate/useTranslation';
 
