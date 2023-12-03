@@ -6,7 +6,7 @@ const Template3 = ({totalAmount, rows, email, phone, logo, logoUpdated, notes, c
 
   Font.register({
     family: 'Poppins-Bold',
-    src: "${fontsPrefix}/assets/Poppins-Bold.ttf",
+    src: `${fontsPrefix}/assets/Poppins-Bold.ttf`,
   });
   Font.register({
     family: 'Poppins-Medium',
